@@ -1,0 +1,16 @@
+# Create a function nthPentagonalNumb() which accepts the given number
+# as an argument and returns the nth pentagonal number.
+def nthPentagonalNumb(numb):
+        # Inside the nthPentagonalNumb() function.
+        # Calculate the value of (3*n*n - n)/2 where n is the argument and
+    # store it in a variable say reslt.
+    reslt = (3*numb*numb - numb)/2
+    # Return the reslt.
+    return int(reslt)
+# Give the number N as static Input and store it in a variable.
+gvnnumb = 4
+# Pass the given Number as an argument to nthPentagonalNumb() 
+# function and store the result returned from the function in a variable say nthNumb.
+nthNumb = nthPentagonalNumb(gvnnumb)
+# Print the nthNumb value.
+print('The {', gvnnumb, '} pentagonal number = ', nthNumb)
